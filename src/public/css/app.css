@@ -1,5 +1,8 @@
-h1 {
-  color: red; }
+.card-course-item {
+  margin-top: 20px; }
 
-h2 {
-  color: blue; }
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover; }

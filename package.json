@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "formatcode": "prettier --single-quote --trailing-comma all --tab-width 4 --write 'src/**/*.{js, json, scss}'",
+    "formatcode": "prettier --single-quote --trailing-comma all --tab-width 4 --write 'src/**/*.{js,json,scss}'",
     "start": "nodemon --inspect src/index.js",
     "sasstocss": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,8 +26,8 @@
     "url": "https://github.com/sonht113/Blog/issues"
   },
   "homepage": "https://github.com/sonht113/Blog#readme",
-   "lint-staged": {
-    "src/**/*.{js, json, scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
   "husky": {
     "hooks": {
@@ -37,6 +37,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.3.4",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.0.11",
+    "mongoose-slug-generator": "^1.0.4",
     "nodemon": "^2.0.13"
   },
   "devDependencies": {

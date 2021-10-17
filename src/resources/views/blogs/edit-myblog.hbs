@@ -1,0 +1,14 @@
+<div class="mt-5">
+    <h3>Cập nhật blog của tôi </h3>
+    <form method="POST" action="/blog/{{blog._id}}?_method=PUT">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" value="{{blog.title}}" id="title" name="title">
+            <label for="body">Body</label>
+            <textarea class="form-control" id="body" name="body">{{blog.body}}"</textarea>
+            <label for="image">Image</label>
+            <input type="text" class="form-control" value="{{blog.image}}" id="image" name="image">
+        </div>
+        <button type="submit" class="btn btn-primary">Update Blog</button>
+    </form>
+</div>
