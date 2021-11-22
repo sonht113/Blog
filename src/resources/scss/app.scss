@@ -1,12 +1,12 @@
 @import './variable';
+@import './form_search.scss';
+@import './layout/header.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
 
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
 .card-course-item{
     margin-top: 20px;
-}
-.user-avatar {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    object-fit: cover;
 }
